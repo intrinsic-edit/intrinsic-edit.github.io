@@ -1,45 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            max-width: 600px;
-            margin: 20px auto;
-            line-height: 1.6;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>IntrinsicEdit: Precise generative image manipulation in intrinsic space</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Coming Soon </h1>
-        
-        
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">IntrinsicEdit: Precise generative image manipulation in intrinsic space</h1>
+			
+			<h1>ACM Transactions on Graphics (Proceedings of SIGGRAPH), 2025</h1>
+			</br>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://people.mpi-inf.mpg.de/~llyu/" target="_blank">Linjie Lyu</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://valentin.deschaintre.fr/" target="_blank">Valentin Deschaintre</a><sup>1</sup>,</span>
+				  <span class="author-block">
+                  <a href="https://yannickhold.com/" target="_blank">Yannick Hold-Geoffroy</a><sup>1</sup>,</span>
+				  <span class="author-block">
+                  <a href="http://www.miloshasan.net/" target="_blank">Miloš Hašan</a><sup>1</sup>,</span>
+				  <span class="author-block">
+                  <a href="https://gorokee.github.io/jsyoon/" target="_blank">Jae Shin Yoon</a><sup>1</sup>,</span>
+				  <span class="author-block">
+                  <a href="https://people.mpi-inf.mpg.de/~tleimkue/" target="_blank">Thomas Leimkühler</a><sup>2</sup>,</span>
+				  <span class="author-block">
+                  <a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://www.iliyan.com/" target="_blank">Iliyan Georgiev</a><sup>2</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+				  </br>
+				<h4><a href="https://www.mpi-inf.mpg.de/departments/visual-computing-and-artificial-intelligence"><sup>1</sup>Max Planck Institute for Informatics, Saarland Informatics Campus,</a></h4>
+				<h4><a href="https://research.adobe.com/"><sup>2</sup>Adobe Research</a></h4>
+                    <!-- <span class="author-block"> -->
+					<!-- <a href="https://www.mpi-inf.mpg.de/departments/visual-computing-and-artificial-intelligence"><sup>1</sup>Max Planck Institute for Informatics, Saarland Informatics Campus,</a></span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="static/pdfs/main.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/suppl.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2505.08889" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-</html>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- Teaser image added here -->
+      <div style="text-align: center; margin: 20px 0;">
+        <img src="static/images/teaser.png" alt="Teaser image for IntrinsicEdit" style="max-width: 80%; height: auto;">
+      </div><!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           Generative diffusion models have advanced image editing with high-quality results and intuitive interfaces such as prompts and semantic drawing. However, these interfaces lack precise control, and the associated methods typically specialize on a single editing task. We introduce a versatile, generative workflow that operates in an intrinsic-image latent space, enabling semantic, local manipulation with pixel precision for a range of editing operations. Building atop the RGB-X diffusion framework, we address key challenges of identity preservation and intrinsic-channel entanglement. By incorporating exact diffusion inversion and disentangled channel manipulation, we enable precise, efficient editing with automatic resolution of global illumination effects -- all without additional data collection or model fine-tuning. We demonstrate state-of-the-art performance across a variety of tasks on complex images, including color and texture adjustments, object insertion and removal, global relighting, and their combinations.
+		   </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Sequential images -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Results</h2>
+        <div class="columns is-centered">
+          <div class="column is-four-fifths has-text-centered">
+            <img src="static/images/removal.png" alt="Object Removal" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+            <h2 class="subtitle"> Object Removal</h2>
+            <img src="static/images/insertion.png" alt="Object Insertion" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+            <h2 class="subtitle">Object Insertion</h2>
+            <img src="static/images/material_editing.png" alt="Material Editing" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+            <h2 class="subtitle">Material Editing</h2>
+            <img src="static/images/relighting.png" alt="Relighting" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+            <h2 class="subtitle"> Relighting</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End sequential images -->
+
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light"> -->
+  <!-- <div class="hero-body"> -->
+    <!-- <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2> -->
+      <!-- <div class="columns is-centered has-text-centered"> -->
+        <!-- <div class="column is-four-fifths"> -->
+          
+          <!-- <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- < -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{lyu2025intrinsic,
+title={IntrinsicEdit: Precise generative image manipulation in intrinsic space},
+author={Lyu, Linjie and Deschaintre, Valentin and Hold-Geoffroy, Yannick and Ha\v{s}an, Milo\v{s} and Yoon, Jae Shin and Leimk{\"u}ehler, Thomas and Theobalt, Christian and Georgiev, Iliyan},
+journal={ACM Transactions on Graphics},
+volume={44},
+number={4},
+year={2025}
+}
+</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            The website template is borrowed from  <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfies</a>.
+            </a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
