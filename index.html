@@ -165,25 +165,38 @@
 
 
 <!-- Sequential images -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Results</h2>
-        <div class="columns is-centered">
-          <div class="column is-four-fifths has-text-centered">
+<!-- Sequential images -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results</h2>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths has-text-centered">
+          <figure>
             <img src="static/images/removal.png" alt="Object Removal" style="max-width: 100%; height: auto; margin-bottom: 10px;">
-            <h2 class="subtitle"> Object Removal</h2>
+            <figcaption class="subtitle is-6">Object Removal: Our method performs on par with or better than specialized approaches (RGB→X→RGB, Photoshop Generative Fill, and Stable Diffusion Inpainting) while handling complex cases like reflection removal. Notably, it preserves surrounding textures and completely removes objects including their shadows, where other methods struggle.</figcaption>
+          </figure>
+		</br>
+          <figure>
             <img src="static/images/insertion.png" alt="Object Insertion" style="max-width: 100%; height: auto; margin-bottom: 10px;">
-            <h2 class="subtitle">Object Insertion</h2>
+            <figcaption class="subtitle is-6">Object insertion: Our method outperforms specialized insertion techniques (RGB→X→RGB, IntrinsicComp, ZeroComp, etc.) by better harmonizing objects with scene lighting and geometry. Key advantages include realistic handling of reflections (top row) and strong directional lighting (bottom row), despite not being task-specific.</figcaption>
+          </figure>
+          </br>
+          <figure>
             <img src="static/images/material_editing.png" alt="Material Editing" style="max-width: 100%; height: auto; margin-bottom: 10px;">
-            <h2 class="subtitle">Material Editing</h2>
+            <figcaption class="subtitle is-6"> Material editing: Our method enables precise material property control (color, texture, roughness) where prompt-based approaches fail, while outperforming intrinsic-space methods in edit quality and scene harmony. Key examples include color-accurate wall reflections (top row), lighting-preserved texture edits (middle rows), and automatic material-consistent floor extensions (third row).</figcaption>
+          </figure>
+          </br>
+          <figure>
             <img src="static/images/relighting.png" alt="Relighting" style="max-width: 100%; height: auto; margin-bottom: 10px;">
-            <h2 class="subtitle"> Relighting</h2>
-          </div>
+            <figcaption class="subtitle is-6">Relighting: Our method produces more natural relighting than RGB→X→RGB, handling both prompted irradiance changes (top rows) and volumetric shading (bottom row) while preserving scene identity. It robustly adapts to drastic lighting changes (second row) while maintaining material properties and object appearances.</figcaption>
+          </figure>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- End sequential images -->
   <!-- End sequential images -->
 
 
